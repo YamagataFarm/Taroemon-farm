@@ -68,17 +68,17 @@
       color: #b9473f;
     }
 
-    .hero {
-      min-height: 76vh;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(120deg, rgba(60, 35, 20, 0.62), rgba(180, 70, 55, 0.28)),
-        linear-gradient(135deg, #f5d7bd 0%, #f8f1c9 45%, #d9ead0 100%);
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
+.hero {
+  min-height: 76vh;
+  display: flex;
+  align-items: center;
+background:
+  linear-gradient(120deg, rgba(60, 35, 20, 0.68), rgba(180, 70, 55, 0.28)),
+  url("images/hero/yamagata-landscape.jpg") center/cover no-repeat;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
 
     .hero::after {
       content: "";
@@ -198,6 +198,19 @@
       font-weight: 700;
     }
 
+    .photo-block {
+  min-height: 340px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 42px rgba(85, 55, 35, 0.12);
+}
+
+.photo-block img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+}
     .text-card {
       background: white;
       border: 1px solid rgba(120, 80, 50, 0.12);
@@ -230,27 +243,17 @@
       border: 1px solid rgba(120, 80, 50, 0.10);
     }
 
-    .product-image {
-      height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      background: linear-gradient(135deg, #fff2d8, #ffd8d1);
-    }
+.product-image {
+  height: 180px;
+  overflow: hidden;
+  background: #f8eadc;
+}
 
-    .product-card:nth-child(2) .product-image {
-      background: linear-gradient(135deg, #f7efd3, #dcebc4);
-    }
-
-    .product-card:nth-child(3) .product-image {
-      background: linear-gradient(135deg, #f7efd3, #e8d7a8);
-    }
-
-    .product-card:nth-child(4) .product-image {
-      background: linear-gradient(135deg, #ffe0c8, #ffd1d7);
-    }
-
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
     .product-body {
       padding: 22px;
     }
@@ -539,10 +542,9 @@
           山形県山形市門伝の自然の中で、季節ごとの実りを大切に育てています。
         </p>
 
-        <div class="two-column">
-          <div class="photo-placeholder">
-            ここに農園・家族・畑の写真を入れます
-          </div>
+<div class="photo-block">
+  <img src="images/farm/farm-photo.jpg" alt="太郎右ェ門農園の風景">
+</div>
 
           <div class="text-card">
             <h3>顔の見える、身近な農園でありたい。</h3>
@@ -572,7 +574,10 @@
 
         <div class="product-grid">
           <div class="product-card">
-            <div class="product-image">🍒</div>
+            <div class="product-image">
+  <img src="images/products/cherry.jpg" alt="さくらんぼ">
+</div>
+            
             <div class="product-body">
               <h3>さくらんぼ</h3>
               <p>山形を代表する初夏の味覚。みずみずしい甘みと美しい色合いが魅力です。</p>
@@ -580,7 +585,9 @@
           </div>
 
           <div class="product-card">
-            <div class="product-image">🌾</div>
+<div class="product-image">
+  <img src="images/products/rice.jpg" alt="お米">
+</div>
             <div class="product-body">
               <h3>お米</h3>
               <p>毎日の食卓に寄り添う、山形の自然に育まれたお米をお届けします。</p>
@@ -588,7 +595,10 @@
           </div>
 
           <div class="product-card">
-            <div class="product-image">🍐</div>
+
+            <div class="product-image">
+  <img src="images/products/lafrance.jpg" alt="ラ・フランス">
+</div>
             <div class="product-body">
               <h3>ラ・フランス</h3>
               <p>芳醇な香りと、とろけるような食感。秋から冬にかけて人気の果実です。</p>
@@ -596,7 +606,9 @@
           </div>
 
           <div class="product-card">
-            <div class="product-image">🍑</div>
+<div class="product-image">
+  <img src="images/products/peach.jpg" alt="桃">
+</div>
             <div class="product-body">
               <h3>桃</h3>
               <p>やわらかな果肉と豊かな甘み。夏の贈りものにもおすすめです。</p>
